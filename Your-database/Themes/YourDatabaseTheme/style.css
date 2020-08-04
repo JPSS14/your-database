@@ -74,5 +74,29 @@ MAIN HEADER
     text-align: center;
 }
 .main_header_nav_ul_li:hover .dropdown_item:last-child{
-    border-bottom: solid 3px black;
+    border-bottom: solid 3px #000;
+}
+
+/* 
+MAIN
+*/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* CONTAINER */
+.container{
+    width: 700px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* BUTTON */
+.btn{
+    color: #000;
+    font-size: 2em;
+    flex-basis: 48%;
+    text-align: center;
 }

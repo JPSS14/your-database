@@ -1,3 +1,8 @@
+<?php
+include("Classes/Connection.php");
+$c = new Connection();
+$c->connect();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -45,6 +50,13 @@
             </ul>
         </nav>
     </header>
+
+    <main class="main">
+        <div class="container">
+            <a class="btn" href="select-database.php">Select Database</a>
+            <a class="btn" href="create-database.php">Create Database</a>
+        </div>
+    </main>
 </body>
 
 </html>
