@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --themeColorA: #61F268;
+    --themeColorA-dark: #4DDB7C;
+}
