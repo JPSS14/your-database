@@ -17,9 +17,28 @@ class DataBase{
         $this->nameDatabase = $nameDatabase;
     }
 
-    public function createDatabase(){
-        $insert = "INSERT INTO y_database VALUES(default, '$this->getNameDatabase()')";
+    // CREATE DATABASE
+    public function createDatabase($cx){
+        $connection = $cx;
 
-    
+        $insert = "INSERT INTO y_database VALUES(default, '$this->getNameDatabase()')";
+        $result = mysqli_query($connection, $insert);
+        if(!$result){
+            die("Erro no banco y_database no método createDatabase");
+        }
+        return $result;
+    }
+
+    // LIST ALL DATABASES
+    public function listAllDatabases($cx){
+        $connection = $cx;
+
+        $select = "SELECT * FROM y_database";
+        $result = mysqli_query($connection, $select);
+
+        if(!$result){
+            die("Erro no banco y_database no método listAllDatabase");
+        }
+        return $result;
     }
 }
