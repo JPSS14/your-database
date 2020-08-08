@@ -100,3 +100,6 @@ MAIN
     flex-basis: 48%;
     text-align: center;
 }
+.btn:hover{
+    border: solid 3px #000;
+}

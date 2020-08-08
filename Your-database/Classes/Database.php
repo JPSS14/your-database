@@ -1,5 +1,7 @@
 <?php
 
+namespace Classes;
+
 class DataBase{
     private $idDatabase;
     private $nameDatabase;
